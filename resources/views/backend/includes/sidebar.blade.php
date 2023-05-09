@@ -41,4 +41,20 @@
 						</li>
 					</ul>
 				</li>
+				<li>
+					<a href="" class="has-arrow">
+						<div class="parent-icon"><i class='bx bx-home-circle'></i>
+						</div>
+						<div class="menu-title">Product</div>
+					</a>
+					<ul>
+						<li> <a href="{{ route('addproduct') }}"><i class="bx bx-right-arrow-alt"></i>Add Product</a>
+						</li>
+						<li> <a href="backend/dashboard-eCommerce.html"><i class="bx bx-right-arrow-alt"></i>Edit Product</a>
+						</li>
+						<li> <a href="{{ route('showproduct') }}"><i class="bx bx-right-arrow-alt"></i>Manage PRoduct</a>
+						</li>
+						
+					</ul>
+				</li>
             </ul>
