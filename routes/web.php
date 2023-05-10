@@ -23,6 +23,11 @@ Route::get('/', function () {
 Route::get('/addproduct',[ProductController::class,"index"])->name("addproduct");
 Route::get('/showproduct',[ProductController::class,"show"])->name("showproduct");
 Route::post('/insertproduct',[ProductController::class,"insert"])->name("insertproduct");
+Route::get('/activeproduct/{id}',[ProductController::class,"active"])->name("activeproduct");
+Route::get('/inactiveproduct/{id}',[ProductController::class,"inactive"])->name("inactiveproduct");
+Route::get('/deleteproduct/{id}',[ProductController::class,"delete"])->name("deleteproduct");
+Route::get('/editproduct/{id}',[ProductController::class,"edit"])->name("editproduct");
+Route::post('/updateproduct/{id}',[ProductController::class,"update"])->name("updateproduct");
 
 
 Route::get('/dashboard', function () {

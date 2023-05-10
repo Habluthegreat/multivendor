@@ -35,13 +35,17 @@
 										<td>{{ $product->price }}</td>
 										<td>{{ $product->quantity }}</td>
                                         <td>
-                                            @if($product->status==1) Active @endif
-                                            @if($product->status==2) Inctive @endif
+										    @if($product->status==1)
+                                              <a href="{{ route('activeproduct',$product->id) }}" class="btn btn-info">Active</a>
+                                            @else
+                                              <a href="{{ route('inactiveproduct',$product->id) }}" class="btn btn-success">Inactive</a>
+
+                                            @endif
                                         </td>
 										
                                         <td>
-                                            <a href="" class="btn btn-info">edit</a>
-                                            <a href="" class="btn btn-danger">delete</a>
+                                            <a href="{{ route('editproduct',$product->id) }}" class="btn btn-info">edit</a>
+                                            <a href="{{ route('deleteproduct',$product->id) }}" class="btn btn-danger">delete</a>
                                         </td>
 									</tr>
 									
@@ -58,6 +62,7 @@
 									</tr>
 								</tfoot>
 							</table>
+							
 						</div>
 					</div>
 				</div>
