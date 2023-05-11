@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\ProductController;
+use App\Http\Controllers\backend\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,7 +29,15 @@ Route::get('/inactiveproduct/{id}',[ProductController::class,"inactive"])->name(
 Route::get('/deleteproduct/{id}',[ProductController::class,"delete"])->name("deleteproduct");
 Route::get('/editproduct/{id}',[ProductController::class,"edit"])->name("editproduct");
 Route::post('/updateproduct/{id}',[ProductController::class,"update"])->name("updateproduct");
-
+//Category
+Route::get('/addcategory',[CategoryController::class,"index"])->name("addcategory");      
+Route::post('/storecategory',[CategoryController::class,"store"])->name("storecategory");
+Route::get('/showcategory',[CategoryController::class,"show"])->name("showcategory");
+Route::get('/activecategory/{id}',[CategoryController::class,"active"])->name("activecategory");
+Route::get('/inactivecategory/{id}',[CategoryController::class,"inactive"])->name("inactivecategory");
+Route::get('/editcategory/{id}',[CategoryController::class,"edit"])->name("editcategory");
+Route::post('/updatecategory/{id}',[CategoryController::class,"update"])->name("updatecategory");
+Route::get('/destrycategory/{id}',[CategoryController::class,"destry"])->name("destrycategory");
 
 Route::get('/dashboard', function () {
     return view('dashboard');
