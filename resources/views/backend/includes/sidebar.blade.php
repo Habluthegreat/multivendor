@@ -42,15 +42,13 @@
 			</ul>
 		</li>
 		<li>
-			<a href="" class="has-arrow">
+			<a href="javascript:;" class="has-arrow">
 				<div class="parent-icon"><i class='bx bx-home-circle'></i>
 				</div>
 				<div class="menu-title">Product</div>
 			</a>
 			<ul>
 				<li> <a href="{{ route('addproduct') }}"><i class="bx bx-right-arrow-alt"></i>Add Product</a>
-				</li>
-				<li> <a href="backend/dashboard-eCommerce.html"><i class="bx bx-right-arrow-alt"></i>Edit Product</a>
 				</li>
 				<li> <a href="{{ route('showproduct') }}"><i class="bx bx-right-arrow-alt"></i>Manage PRoduct</a>
 				</li>
@@ -68,6 +66,19 @@
 				</li>
 				<li> <a href="{{ route('showcategory') }}"><i class="bx bx-right-arrow-alt"></i>Catrgory Details</a>
 				</li>
+			
+			</ul>
+		</li>
+		<li>
+			<a href="javascript:;" class="has-arrow">
+				<div class="parent-icon"><i class='bx bx-cart'></i>
+				</div>
+				<div class="menu-title">Brand</div>
+			</a>
+			<ul>
+				<li> <a href="{{ route('addbrand') }}"><i class="bx bx-right-arrow-alt"></i>Add Brand</a>
+				</li>
+				
 			
 			</ul>
 		</li>

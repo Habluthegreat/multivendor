@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\backend\CategoryController;
+use App\Http\Controllers\Backend\BrandController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,10 @@ Route::get('/inactivecategory/{id}',[CategoryController::class,"inactive"])->nam
 Route::get('/editcategory/{id}',[CategoryController::class,"edit"])->name("editcategory");
 Route::post('/updatecategory/{id}',[CategoryController::class,"update"])->name("updatecategory");
 Route::get('/destrycategory/{id}',[CategoryController::class,"destry"])->name("destrycategory");
+
+//brand
+Route::get('/addbrand',[BrandController::class,'index'])->name('addbrand');
+Route::post('/insertbrand',[BrandController::class,'insert']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

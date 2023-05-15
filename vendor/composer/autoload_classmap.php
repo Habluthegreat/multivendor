@@ -32,6 +32,7 @@ return array(
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Http\\Requests\\Auth\\LoginRequest' => $baseDir . '/app/Http/Requests/Auth/LoginRequest.php',
     'App\\Http\\Requests\\ProfileUpdateRequest' => $baseDir . '/app/Http/Requests/ProfileUpdateRequest.php',
+    'App\\Models\\Brand' => $baseDir . '/app/Models/Brand.php',
     'App\\Models\\CategoryModel' => $baseDir . '/app/Models/CategoryModel.php',
     'App\\Models\\Product' => $baseDir . '/app/Models/Product.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
