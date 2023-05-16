@@ -82,4 +82,17 @@
 			
 			</ul>
 		</li>
+		<li>
+			<a href="javascript:;" class="has-arrow">
+				<div class="parent-icon"><i class='bx bx-cart'></i>
+				</div>
+				<div class="menu-title">Rakib</div>
+			</a>
+			<ul>
+				<li> <a href="{{ route('addrakib') }}"><i class="bx bx-right-arrow-alt"></i>Add rakib</a>
+				</li>
+				
+			
+			</ul>
+		</li>
 </ul>

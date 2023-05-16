@@ -20,3 +20,4 @@
 	<!--app JS-->
 	<script src="{{asset('backend')}}/assets/js/app.js"></script>
 	<script src="{{asset('backend')}}/assets/js/ajaxforbrand.js"></script>
+	<script src="{{asset('backend')}}/assets/js/ajaxforrakib.js"></script>

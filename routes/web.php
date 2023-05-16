@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\backend\CategoryController;
 use App\Http\Controllers\Backend\BrandController;
+use App\Http\Controllers\Backend\RakibController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,6 +44,14 @@ Route::get('/destrycategory/{id}',[CategoryController::class,"destry"])->name("d
 //brand
 Route::get('/addbrand',[BrandController::class,'index'])->name('addbrand');
 Route::post('/insertbrand',[BrandController::class,'insert']);
+
+//Rakib
+Route::get('/addrakib',[RakibController::class,'index'])->name('addrakib');
+Route::post('/storerakib',[RakibController::class,'store']);
+Route::get('/showrakib',[RakibController::class,'show']);
+Route::get('/activerakib/{id}',[RakibController::class,'active']);
+Route::get('/inactiverakib/{id}',[RakibController::class,'inactive']);
+Route::get('/deleterakib/{id}',[RakibController::class,'delete']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');
