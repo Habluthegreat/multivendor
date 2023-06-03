@@ -1,6 +1,6 @@
 <ul class="metismenu" id="menu">
 		<li>
-			<a href="backend/javascript:;" class="has-arrow">
+			<a href="javascript:;" class="has-arrow">
 				<div class="parent-icon"><i class='bx bx-home-circle'></i>
 				</div>
 				<div class="menu-title">Dashboard</div>
@@ -19,7 +19,7 @@
 			</ul>
 		</li>
 		<li>
-			<a href="" class="has-arrow">
+			<a href="javascript:;" class="has-arrow">
 				<div class="parent-icon"><i class="bx bx-category"></i>
 				</div>
 				<div class="menu-title">Application</div>
@@ -76,7 +76,7 @@
 				<div class="menu-title">Brand</div>
 			</a>
 			<ul>
-				<li> <a href="{{ route('addbrand') }}"><i class="bx bx-right-arrow-alt"></i>Add Brand</a>
+				<li> <a href="{{ route('addbrand')}}"><i class="bx bx-right-arrow-alt"></i>Add Brand</a>
 				</li>
 				
 			
@@ -93,6 +93,19 @@
 				</li>
 				
 			
+			</ul>
+		</li>
+		<li>
+			<a href="javascript:;" class="has-arrow">
+				<div class="parent-icon"><i class='bx bx-cart'></i>
+				</div>
+				<div class="menu-title">Brand image</div>
+			</a>
+			<ul>
+				<li> <a href="{{ route('addbrandimg') }}"><i class="bx bx-right-arrow-alt"></i>Add Brand image</a>
+				</li>
+				<li> <a href="{{ route('showbrandimg') }}"><i class="bx bx-right-arrow-alt"></i>Manage Brand image</a>
+				</li>
 			</ul>
 		</li>
 </ul>

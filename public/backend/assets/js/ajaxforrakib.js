@@ -29,6 +29,8 @@ jQuery(document).ready(function() {
             }
         });
     });
+
+    
     show();
 
     function show() {
@@ -60,7 +62,7 @@ jQuery(document).ready(function() {
                 });
                 jQuery(".alldata").html(allData);
             }
-        });
+        })
     }
 
     jQuery(document).on("click", ".active-btn", function() {

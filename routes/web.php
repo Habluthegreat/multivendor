@@ -6,6 +6,7 @@ use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\backend\CategoryController;
 use App\Http\Controllers\Backend\BrandController;
 use App\Http\Controllers\Backend\RakibController;
+use App\Http\Controllers\backend\BrandimageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,8 +44,19 @@ Route::get('/destrycategory/{id}',[CategoryController::class,"destry"])->name("d
 
 //brand
 Route::get('/addbrand',[BrandController::class,'index'])->name('addbrand');
-Route::post('/insertbrand',[BrandController::class,'insert']);
+Route::post('/storebrand',[BrandController::class,'store']);
+Route::get('/showbrand',[BrandController::class,'show']);
+Route::get('/activebrand/{id}',[BrandController::class,'active']);
+Route::get('/inactivebrand/{id}',[BrandController::class,'inactive']);
+Route::get('/destroybrand/{id}',[BrandController::class,'destroy']);
+Route::get('/editbrand/{id}',[BrandController::class,'edit']);
+Route::post('/updatebrand/{id}',[BrandController::class,'update']);
 
+//brand image
+Route::get('/addbrandimg',[BrandimageController::class,'index'])->name("addbrandimg");
+Route::post('/storebrandimg',[BrandimageController::class,'store'])->name("storebrandimg");
+Route::get('/showbrandimg',[BrandimageController::class,'show'])->name("showbrandimg");
+Route::get('/viewgallery/{id}',[BrandimageController::class,'view'])->name("viewgallery");
 //Rakib
 Route::get('/addrakib',[RakibController::class,'index'])->name('addrakib');
 Route::post('/storerakib',[RakibController::class,'store']);
